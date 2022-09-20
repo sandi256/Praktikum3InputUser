@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="60dp"
+    android:background="#E1CC48"
+    >
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="HASIL"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/inputpertama"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/radius"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="20dp"
+        android:hint="Masukan angka pertama"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/inputkedua"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/radius"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:hint="Masukan angka kedua"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/tambah"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#F1f1f1"
+            android:hint="+"
+            android:onClick="prosestambah"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/kurang"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#F1f1f1"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/tambah"
+            android:onClick="proseskurang"
+            android:hint="-"
+            android:textColorHint="@color/black"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/kali"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@+id/kurang"
+            android:backgroundTint="#F1f1f1"
+            android:hint="x"
+            android:onClick="proseskali"
+            android:textColorHint="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/bagi"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/kali"
+            android:backgroundTint="#F1f1f1"
+            android:hint="/"
+            android:textSize="20sp"
+            android:onClick="prosesbagi"
+            android:textColorHint="@color/black" />
+    </RelativeLayout>
+
+</LinearLayout>
